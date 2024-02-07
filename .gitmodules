@@ -2,3 +2,8 @@
 	path = u-boot
 	url = https://github.com/u-boot/u-boot.git
 	shallow = true
+[submodule "linux"]
+	path = linux
+	url = https://github.com/torvalds/linux.git
+	shallow = true
+    branch = v6.7
