@@ -7,4 +7,4 @@ docker run -v $(pwd):/container/path -w /container/path/u-boot --rm myapp:1.0 ma
 docker run -v $(pwd):/container/path -w /container/path/linux --rm myapp:1.0 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- licheepi_zero_defconfig
 docker run -v $(pwd):/container/path -w /container/path/linux --rm myapp:1.0 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j8 all
 docker run -v $(pwd):/container/path -w /container/path/linux --rm myapp:1.0 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j8 modules
-docker run -v $(pwd):/container/path -w /container/path/linux --rm myapp:1.0 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j8 modules INSTALL_MOD_PATH=/container/path/modules/
+docker run -v $(pwd):/container/path -w /container/path/linux --rm myapp:1.0 make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- -j8 modules_install INSTALL_MOD_PATH=/container/path/modules/
